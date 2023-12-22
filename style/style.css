@@ -38,27 +38,19 @@ nav
     font-size: 1.8rem;
 }
 
-.nav-container ul li a
-{
+.nav-container ul li a {
     text-decoration: none;
     color: #595858;
-    transition: all .3s;
-    
-}
+  }
 
-.nav-container ul li a:hover
-{
-    font-weight: 500;
-    
-}
 .nav-container ul li a.active
 {
     font-weight: 500;
 }
 
-img
+.nav-container img
 {
-    width: 30rem;
+    width: 20rem;
 }
 .Identity
 {
@@ -104,7 +96,7 @@ img
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    min-width: 100%;
+    padding: 0 9.6rem;
 }
 ul li a.active
 {
@@ -113,9 +105,9 @@ ul li a.active
     border-bottom: 1px solid #333;
 }
 
-.container img
+.hero .container img
 {
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
