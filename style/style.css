@@ -1,0 +1,119 @@
+:root
+{
+    font-size: 10px;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Serif 4', serif;
+
+}
+
+body
+{
+    background-color: #fffefe;
+}
+
+nav
+{
+    padding: 0 9.6rem;
+}
+
+.nav-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-container ul
+{
+    display: flex;
+    list-style: none;
+    gap:2rem;
+    font-size: 1.6rem;
+}
+
+.nav-container ul li a
+{
+    text-decoration: none;
+    color: #6F6E6E;
+    text-transform: uppercase;
+}
+.nav-container ul li a .active
+{
+    font-weight: 700;
+}
+
+img
+{
+    width: 20rem;
+}
+.Identity
+{
+    font-size: 2.4rem;
+    text-align: center;
+    color: #6F6E6E;
+    font-weight: 700;
+}
+
+.sub
+{
+    margin-top: 1rem;
+    letter-spacing: .5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.social-media
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.6rem;
+}
+
+.social
+{
+    width: 3.2rem;
+}
+
+.hero
+{
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    height: auto;
+    border-radius: 3px solid black;
+    margin: 9.4rem 0;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    min-width: 80%;
+}
+ul li a.active
+{
+    color: #333;
+    font-weight: 700;
+    border-bottom: 1px solid #333;
+}
+
+.container img
+{
+    min-width: 100%;
+    height: auto;
+}
+
+footer
+{
+    padding: 3.2rem;
+}
