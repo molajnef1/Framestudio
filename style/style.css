@@ -105,6 +105,43 @@ nav
     height: auto;
 }
 
+.card
+{
+    position: relative;
+}
+
+.card-text
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: hsla(0, 1%, 17%, 0.856);
+    opacity: 0;
+    color: #fffefe;
+    font-size: 1.4rem;
+    text-align: center;
+    transition: opacity .5s;
+}
+
+.card:hover .card-text
+{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.card-title
+{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
 footer
 {
     padding: 3.2rem;
