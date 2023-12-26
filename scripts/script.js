@@ -1,9 +1,10 @@
-const activePage = window.location.pathname;
-const navLinks = document.querySelectorAll('nav a').forEach(link => {
+document.addEventListener('DOMContentLoaded', function () {
+  const menuIcon = document.getElementById('menu-icon');
+  const mainMenu = document.querySelector('.nav-container ul');
 
-
-  if (link.href.includes(activePage)) {
-    link.classList.add('active');
-    console.log(link);
+  if (menuIcon && mainMenu) {
+      menuIcon.addEventListener('click', function () {
+          mainMenu.classList.toggle('show-menu');
+      });
   }
 });

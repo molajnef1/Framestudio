@@ -277,45 +277,74 @@ footer
 }
 
 
+.hamburger-icon
+{
+  display: none;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.hamburger-icon div
+{
+  width: 35px;
+  height: 3px;
+  background-color: #3f3e3e;
+  margin: .6rem 0;
+  transition: .4s;
+}
+
+.open .bar1
+{
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2
+{
+  opacity: 0;
+
+}
+
+.open .bar3
+{
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.mobile-menu
+{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+.open .mobile-menu
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 /*******************
 ** Mobile Version **
 *******************/
 
-@media only screen and (max-width: 600px)
-{
+/* Add this to your CSS file */
 
-  .nav-container ul
-  {
-    display: none;
-  }
-
-  .nav-container .menu-icon
-  {
-    width: 2px;
-    height: 2px;
-    color: #3f3e3e;
+@media screen and (max-width: 768px) {
+  .nav-container ul {
+      display: none;
   }
 
-  .about-container
+  .hamburger-icon
   {
-    max-width: 60rem;
-  }
-  .container-grid
-  {
-    grid-template-columns: none;
-    grid-template-rows: 1fr 1fr;
-    max-width: 100%;
+    display: block;
+    order: 1;
+    margin-right: 9.6rem;
   }
 
-  .text
-  {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  .image
-  {
-    margin-top: -10rem;
-  }
+
 }
