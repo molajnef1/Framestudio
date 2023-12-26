@@ -338,6 +338,10 @@ footer
   .nav-container ul {
       display: none;
   }
+  nav
+  {
+    display: flex;
+  }
 
   .hamburger-icon
   {
